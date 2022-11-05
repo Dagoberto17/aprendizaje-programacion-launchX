@@ -1,0 +1,188 @@
+<!-- Parte incial del codigo -->
+<!-- Dejar notas dentro del codigo --->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-COMPATIBLE" content="IE-Edge">
+	<meta name="viewport" content="width=device-width, inicial-scale=1.0">
+	<title>Apuntes calse 1 HTML</title>
+</head>
+<body>
+	<!-- Explicación de la patrte inicial -->
+	<h2>Parte inicial del codigo </h2>
+		<p>
+			Para empezar a programar en html debemos decir que tenemos un documento HTML: 
+			<br><br><img src="./Incial.png"> <br>
+			<br>DOCTYPE HTML (nos indica que es html 5) 
+			<br>html lang="en" (nos inidica el idioma de la página web)
+		</p>
+
+	<!-- Expliplicación de head -->
+	<h2>Head o encabezados</h2>
+		<p>El head o encabezados es la parte del codigo en la cual se describe toda la información de la página web. Dentro de este apartado tenemos las siguientes etiquetas:
+			<br><br>
+			<img src="./Head.png">
+		</p>
+		<p> meta charset="utf-8". Nos dices los tipos de caracteres que se usaaran en el codigo. Por ejemplo el formato meta charset="utf-8" nos permite usar caracteres como la "ñ"</p>
+		<p>meta http-equiv="X-UA-COMPATIBLE" content="IE-Edge". Nos indica si es compatible con internet explorer y edge legacy</p>
+		<p>meta name="viewport" content="width=device-width, inicial-scale=1.0". Nos inidica el tamaño y escala de la página </p>
+		<p>title/Apuntes clase 1 HTML/title. Nos indica el titulo que tendra nuestra pagina web en la pestaña del navegador</p>
+	
+	<!-- Titulos h1-h6 --->
+	<h2>Titulos</h2>
+		<p>Para poner titulos dentro de la web tenemos las siguientes etiquetas:
+			<br><img src="./Titulos.png">
+		</p>
+		<p>
+			 Estos titulos van desde h1 hasta h6 y ademas de modificar el tamaño del texto, nos dicen la jeraquía de la busqueda en algun motor de busqueda (google, bing, yandex, etc.)
+		</p>
+		<p>
+			Ejemplo:
+			<br>
+			<h1>Titulo</h1>
+			<h2>Titulo</h2>
+			<h3>Titulo</h3>
+		</p>
+
+	<!-- Parrafos --->
+	<h2>Explicación de los parrafos</h2>
+		<p>
+			Es todo aquel contenido que no puede ir en los titulos, y este no tiene un alto impacto en alguna busqueda. Para agregar algún párrafo se usa la etiqueta "P". 
+				<br>En caso de que desemos generar algún salto de linea usamos br.
+		</p>
+		<p>
+			Ejemplo codigo:
+			 <br><br><img src="./Parrafos.png">
+		</p>
+		
+	<!-- Links --> <!-- target nos dice si se abre en una nueva pestaña y si se elimina se abre  en la misma pestaña  -->
+	<h2>Links</h2>
+		<p>
+			Para usar algún link necesitamos de la etiqueta "a":
+				<br><img src="./link blank.png">
+				<br>href es la parte donde se coloca el enlace, target="_blank" nos dice que se abrirá en otra pestaña, encaso de eliminarlo se abrirá en la misma página.
+		</p>
+		<p>
+			Ejemplo: 
+			<br>
+			<a href="https://www.youtube.com/watch?v=DgbLFa9WvTA" target="_blank">Titulo del link con blank</a>
+			<br>
+			<a href="https://www.youtube.com/watch?v=DgbLFa9WvTA">Titulo del link sin blank</a>
+		</p>
+	
+	<!-- imagenes -->
+	<h2>Explicación de las imagenes</h2>
+		<p>
+			Para usar imagenes en nuestras paginas debemos de llamar a la etiqueta "img". Esta etiqueta se compone de la sigueinte manera:
+				<br>"src": nos indica el link (local o de internet) de la imagen.
+				<br>"alt": el nombre de la imagen.
+				<br>"width y height": son el ancho y alto de la imagen.
+		</p>
+		<p>
+			Ejemplo de codigo:
+				<br><img src="./Imagenes.png">
+		</p>
+		<p>
+			Ejmplo imagen:
+				<br>
+				<img src="https://scontent.fntr7-1.fna.fbcdn.net/v/t39.30808-6/273301916_1981360328735245_2933349816924680792_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=QDU2AzKB0rkAX8edV4M&_nc_ht=scontent.fntr7-1.fna&oh=00_AfDR5dqaUpWaXBzaoyd1j-vNa9SJwG0bRmzqnUBlPW9csg&oe=6363BAF0" alt="Foto mamalona" width="480" height="480">
+		</p>
+	
+	<!--links con imagenes -->
+	<h2>Explicación imagenes con link</h2>
+		<p>
+			Para poner hipervinculos en las imagenes solo basta con anexar el codigo del link en el de la imagen.
+			<br><br>Codigo imagen:
+				<br><img src="./Imagenes.png">
+
+			<br><br>Codigo link:
+				<br><img src="./link blank.png">
+			<br><br>Codigo final_
+				<br><img src="./imagenes con link.png">
+		</p>
+		<p>
+			Ejmplo:
+			<br>
+			<a href="https://www.youtube.com/watch?v=DgbLFa9WvTA" target="blank">	<img src="https://scontent.fntr7-1.fna.fbcdn.net/v/t39.30808-6/273301916_1981360328735245_2933349816924680792_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=QDU2AzKB0rkAX8edV4M&_nc_ht=scontent.fntr7-1.fna&oh=00_AfDR5dqaUpWaXBzaoyd1j-vNa9SJwG0bRmzqnUBlPW9csg&oe=6363BAF0" alt="Foto mamalona" width="480" height="480"> </a>
+		</p>
+
+	<!--Tablas -->
+	<h2>Explicación tabla</h2>
+		<p>
+			Para ingresar alguna tabla tenemos que usar table y se compone de la sigueinte manera:
+				<br>Tr es la fila de la tabla
+					<br>Th son los titulos de cada columna
+				<br>Td son los datos de la tabla
+		</p>
+		<p>
+			Ejmplo de codigo_
+			<br>
+			<img src="./Tablas.png">
+		</p>
+		<p>
+			Ejmplo tabla:
+				<br>
+					<table>
+						<tr>
+							<th>Compañia</th>
+							<th>Nombre</th>
+							<th>País</th>
+						</tr>
+						<tr>
+							<td>Youtube</td>
+							<td>Dagoberto del Rio</td>
+							<td>México</td>
+						</tr>
+						<tr>
+							<td>Google</td>
+							<td>Isaac Trejo</td>
+							<td>México</td>
+						</tr>
+					</table>
+		</p>
+	
+	<!-- Listas -->
+	<h2>Explicaición de listas</h2>
+		<p>
+			Para usar listas debeos de usar las siguientes etiquetas:
+			<br>ul nos indica listas sin orden.
+			<br>li es el contenido de la lista.
+			<br>ol son listas ordenadas numericamente.
+			<br>dl son listas con descripciones
+			<br>td contenido de la lista
+			<br>dd descripción del contenido
+		</p>
+		<p>
+			Ejmplo codigo:
+			<br>
+			<img src="./Listas.png">
+		</p>
+		<p>
+			Ejmplo de listas:
+			<br>
+			<ul>
+				<li>Primero</li>
+				<li>Segundo</li>
+				<li>Tercero</li>
+				<li>Cuarto</li>
+			</ul>
+			<ol>
+				<li>Primero</li>
+				<li>Segundo</li>
+				<li>Tercero</li>
+				<li>Cuarto</li>
+			</ol>
+			<dl>
+				<td>Primero</td>
+					<dd>Descricpión uno</dd>
+				<td>Segundo</td>
+					<dd>Descricpión dos</dd>
+				<td>Tercero</td>
+					<dd>Descricpión tres</dd>
+				<td>Cuarto</td>
+					<dd>Descricpión cuatro</dd>
+			</dl>
+
+</body>
+</html>
