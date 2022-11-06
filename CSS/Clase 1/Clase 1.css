@@ -1,0 +1,42 @@
+/*Colores en el trexto*/
+
+*{font-family: sans-serif;}
+
+p{font-size: 20px;}
+
+.Rojo{color: red;}
+
+.RGB{color: rgb(155, 20, 309);}
+
+.RGBA{color: rgba(150, 320, 189, 0.8);}
+
+.Hex{color: #EA4350;}
+
+.HSL{color: hsl(90, 85%, 50%);}
+
+/*Fondos*/
+
+section{height: 400px;}
+
+div{height: 400px;}
+
+.fondoColor{background-color: #0f6666;}
+
+.fondoOpacidad{background-color: rgba(150, 368, 30, 0.3);}
+
+.fondoImagen{background-image: url(https://th.bing.com/th/id/OIP.5nyHERq9D4GyOvf6TspfygHaEo?pid=ImgDet&rs=1);}
+
+.fondoRepetidoX{background-image: url(https://th.bing.com/th/id/OIP.5nyHERq9D4GyOvf6TspfygHaEo?pid=ImgDet&rs=1);
+	background-repeat: repeat-x;}
+
+.fondoRepetidoY{background-image: url(https://th.bing.com/th/id/OIP.5nyHERq9D4GyOvf6TspfygHaEo?pid=ImgDet&rs=1);
+	background-repeat: repeat-y;}
+
+.fondoNoRepetido{background-image: url(https://th.bing.com/th/id/OIP.5nyHERq9D4GyOvf6TspfygHaEo?pid=ImgDet&rs=1);
+	background-repeat: no-repeat;}
+
+.fondoPosicion{background-image: url(https://th.bing.com/th/id/OIP.5nyHERq9D4GyOvf6TspfygHaEo?pid=ImgDet&rs=1); 
+	background-repeat: no-repeat; background-position: center;}
+
+.fondoCompleto{background-image: url("https://th.bing.com/th/id/OIP.5nyHERq9D4GyOvf6TspfygHaEo?pid=ImgDet&rs=1");
+    background-repeat: no-repeat; background-position: center; background-size: cover;}
