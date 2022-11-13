@@ -1,0 +1,28 @@
+*{
+	font-family: sans-serif;
+}
+
+.Introducción{
+	height: 800px;
+	min-width: 400px ;
+	background-color: skyblue;
+}
+
+.introducción2{
+	height: 400px;
+	width: 400px;
+	background-color: red;
+}
+
+p, h1, a{
+	font-size: 100%px;
+	color: white;
+}
+
+@media (max-width: 600px){
+	.Introducción{ background-color: green; }
+}
+
+@media(max-width: 900px) and (min-width: 601px){
+	.Introducción{background-color: pink;}
+}
