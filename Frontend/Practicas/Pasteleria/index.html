@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./estilos.css">
+	<script src="https://kit.fontawesome.com/079d0cddf3.js" crossorigin="anonymous"></script>
+	<title>Dulce tentación</title>
+</head>
+<body>
+	
+	<!-- Nav bar -->	
+	<header class="header" id="Inicio">
+		<figure class="logo">
+			<a href="./index.html"><img class="nav_img" alt="Logo marca" src="./Imagenes/Logo.png"></a>
+		</figure>
+		<nav>
+			<div class="links">
+				<a class="a" href="#Inicio">Inicio</a>
+				<a class="a" href="#Menú">Menu</a>
+				<a class="a" href="#Pedidos">Pedidos</a>
+				<a class="a" href="#Ubicacion">Ubicación</a>
+				<a class="a" href="./admin.html">Admin</a>
+			</div>
+		</nav>
+	</header>
+
+	<div class="slider">
+		<ul class="sli_img">
+			<li class="li_img"><img src="./Imagenes/Slider1.png" class="slider_img" alt=""></li>
+			<li class="li_img"><img src="./Imagenes/Slider2.png" class="slider_img" alt=""></li>
+			<li class="li_img"><img src="./Imagenes/Slider3.png" class="slider_img" alt=""></li>
+		</ul>
+	</div>
+
+	<!-- Menú -->
+	<section id="Menú" class="menu">
+		<div class="title_menu">
+			<h1>Menú</h1>
+			<p>Aquí enocontraras todo nuestro catalago de pasteles que podemos realizar para ti.</p>
+		</div>
+		<div class="pasteles_menu">
+			<div class="cointeiner">
+				<div class="card">
+					<figure class="pasteles_img">
+						<img class="Chocolate" src="./Imagenes/Pastel_chocolate.png">
+					</figure>
+					<div class="contenido">
+						<h3>Chocolate</h3>
+						<p>Pastel de chocolate amargo con trozos de fresa</p>
+						<a href="#Pedidos">$85</a>
+					</div>
+				</div>
+
+			<div class="cointeiner">
+				<div class="card">
+					<figure class="pasteles_img">
+						<img class="vainilla" src="./Imagenes/Pastel_vainilla.png">
+					</figure>
+					<div class="contenido">
+						<h3>Vainilla</h3>
+						<p>Pastel de vainilla con trozos de frutas</p>
+						<a href="#Pedidos">$107</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="cointeiner">
+				<div class="card">
+					<figure class="pasteles_img">
+						<img class="Chocolate" src="./Imagenes/Pastel_fresas.png">
+					</figure>
+					<div class="contenido">
+						<h3>Fresas con crema</h3>
+						<p>Pastel de fresas con crema de tres leches</p>
+						<a href="#Pedidos">$150</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="Menú" class="menu">
+		<div class="title_menu">
+			<h2>Decoraciones</h2>	
+			<p>Si lo deseas también contamos con decoraciones para tus pasteles.</p>
+		</div>
+			<div class="cointeiner">
+				<div class="card">
+					<figure class="decoraciones_img">
+						<img class="Mermelada" src="./Imagenes/mermelada.png">
+					</figure>
+					<div class="contenido">
+						<h3>Mermelada</h3>
+						<p>Jalea de su sabor favorito</p>
+						<a href="#Pedidos">$20</a>
+					</div>
+				</div>
+
+
+			<div class="cointeiner">
+				<div class="card">
+					<figure class="decoraciones_img">
+						<img class="Chocolate" src="./Imagenes/chocolate.png">
+					</figure class="decoraciones_img">
+					<div class="contenido">
+						<h3>Chocolate</h3>
+						<p>Chocolate liquido al gusto</p>
+						<a href="#Pedidos">$10</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="cointeiner">
+				<div class="card">
+					<figure class="decoraciones_img">
+						<img class="Chantilli" src="./Imagenes/chantilly.png">
+					</figure>
+					<div class="contenido">
+						<h3>Chantilly</h3>
+						<p>Chantilly de vainilla</p>
+						<a href="#Pedidos">$13</a>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<!-- Pedidos -->
+	<section id="Pedidos">
+		<div class="pedido_titulo">
+			<h2>¡Ordena aquí!</h2>
+			<p>Rellena el formulario para completar tu pedido</p>
+			
+		</div>
+		<form action="" class="form">
+			<div class="formu1">
+				<h3 class="subtitulo">Datos de envío</h3>
+					
+				<div class="inputbox">
+					<label for="input" class="form_label">Nombre</label>
+					<input id="input" type="text" required="required">
+					<span class="form_line"></span>
+				</div>
+
+				<div class="inputbox">
+					<label for="email" class="form_label">Correo electronico</label>
+					<input id="email" type="email" required="required">
+					<span class="form_line"></span>
+				</div>
+
+				<div class="inputbox">
+					<label for="tel" class="form_label">Telefono</label>
+					<input id="tel" type="tel" required="required" maxlength="10">
+					<span class="form_line"></span>
+				</div>
+				<div class="inputbox">
+					<label for="direccion" class="form_label">Dirección</label>
+					<input id="direccion" type="text" required="required">
+					<span class="form_line"></span>
+				</div>
+				<div class="inputbox">
+					<label for="comentarios" class="form_label">Comentarios</label>
+					<input id="comentarios" type="text" required="required">
+					<span class="form_line"></span>
+				</div>   
+			</div>
+			<br><br>
+			<div class="formu1">
+				<h3 class="subtitulo">Pedido</h3>
+				
+				<p>Sabores</p>
+
+				<div class="saboresform">
+					<input type="checkbox" id="Chocolate_pas" name="Chocolate" required="required">
+					<label for="Chocolate_pas">Chocolate</label><br>
+					<input type="checkbox" id="Vainilla" name="Vainilla" required="required">
+					<label for="Vainilla">Vainilla</label><br>
+					<input type="checkbox" id="Fresas_crema" name="Fresas_crema" required="required">
+					<label for="Fresas_crema">Fresas con crema</label><br>
+				</div>
+				
+				<p>Adornos</p>
+
+				<div class="adornosform">
+					<input type="checkbox" id="Mermelada" name="Mermelada" required="required">
+					<label for="Mermelada">Mermelada</label><br>
+					<input type="checkbox" id="Chocolate" name="Chocolate" required="required">
+					<label for="Chocolate">Chocolate</label><br>
+					<input type="checkbox" id="Chantilly" name="Chantilly" required="required">
+					<label for="Chantilly">Chantilly</label><br>
+				</div>
+			</div>
+
+			<div class="botones">
+				<div class="boton">
+					<button type="submit">Realizar pedido</button>
+				</div>
+				<div class="boton">
+					<button type="reset">Eliminar pedido</button>
+				</div> 
+			</div>
+			
+		</form>
+		</form>
+	</section>
+
+	<!-- Ubicación -->
+	<section id="Ubicacion">
+			<div class="tarjeta">
+				<h2 class="title_ubi">Nos puedes encontrar en:</h2>
+				<p class="parrafo_ubi">
+					Blvd. Hombres Ilustres 227, Periodistas, 99040 Fresnillo, Zac.
+				</p>
+			</div>
+			<div class="Horarios">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Días</th>
+							<th>Horario</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Lunes a viernes</td>
+							<td>10:00 - 20:00</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+							<td>Sabados</td>
+							<td>13:00 - 20:00</td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+							<td>Domingos</td>
+							<td>13:00 - 18:00</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="boton_ubicacion">
+			<a href="https://goo.gl/maps/wRpQ2zzvSQfihgSh8" target="_blank" class="boton">Mapa</a>
+			</div>
+	</section>
+	
+	<!-- Footer -->
+	<section id="pie_de_pagina">
+		<footer>
+			<div class="container_footer">
+				<div class="box_footer">
+					<figure class="logo">
+						<img src="./Imagenes/Logo.png" alt="marca">
+					</figure>
+				</div>
+				<div class="box_footer">
+					<h3>Sobre nosotros</h3>
+					<p>Somos una empresa 100% Fresnillense que busca llevar su producto a todos los rincones del pais,
+					atraves de metodos de envio sofisticados (deleivery's app y propio), para que de esta manera todos puedan
+					probar nuestros delicios pasteles.</p>
+				</div>
+				<div class="box_footer">
+					<h3>Redes sociales</h3>
+					<a href="#"><i class="fa-brands fa-facebook">  Facebook</i></a>
+					<a href=""><i class="fa-brands fa-twitter"></i>  Twitter</a>
+					<a href=""><i class="fa-brands fa-instagram">  instagram</i></a>
+					<a href="https://github.com/Dagoberto17/dagoberto17.github.io/tree/main"><i class="fa-solid fa-link"></i>  Codigo</a>
+				</div>
+			</div>
+			<div class="box_copy">
+				<p>Todos los derechos reservados © <b>Technology</b></p>
+			</div>
+		</footer>
+	</section>
+</body>
+</html>

@@ -1,0 +1,549 @@
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
+
+*{ 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ 	font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  }
+
+body{
+  background: rgb(135,206,235);
+background: linear-gradient(0deg, rgba(135,206,235,1) 0%, rgba(240,255,255,0.7) 100%);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+/* Nav bar */
+
+.header{
+  background-color: rgba(0, 0, 0, 0.0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85ox;
+  padding: 5px 10%;
+}
+
+.header .logo{
+  cursor: pointer;
+}
+
+.header .logo .nav_img{
+  height: 70px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.header .logo .nav_img:hover{
+  transform: scale(1.2);
+}
+
+.header .links .a{
+  padding:  0 20px;
+  text-decoration: none;
+  font-size: 700;
+  color: black;
+  transition: all 0.5s ease;
+}
+
+.header .links .a:hover{
+  padding: 5px 10px;
+  background: skyblue;
+  color: white;
+  border-radius: 15px;
+}
+
+/* Banner paralax */
+
+
+.slider{
+  width: 75%;
+  height: 450px;
+  overflow: hidden;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius:  10px;
+}
+
+.sli_img{
+   filter: brightness(0.5);
+}
+
+.slider{
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.slider .sli_img{
+  display: flex;
+  animation: cambio 20s infinite;
+  alternate: linear;
+  width: 400%;
+}
+
+  .slider .li_img{
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+
+.slider .slider_img{
+  width: 75%;
+  height: 75%;
+}
+
+@keyframes cambio{
+  0%{margin-left: 0;}
+  20%{margin-left: 0;}
+
+  25%{margin-left: -133.4%;}
+  45%{margin-left: -133.4%;}
+
+  50%{margin-left: -266.6%;}
+  70%{margin-left: -266.6%;}
+
+  75%{margin-left: 0;}
+  100%{margin-left: 0;}  
+}
+
+/* Menu */
+
+.title_menu{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.menu .title_menu h1{
+  font-size: 50px;
+}
+
+.menu .title_menu h2{
+  font-size: 50px;
+}
+
+.cointeiner{
+  width: 100%;
+  display: flex;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card{
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  cursor: default;
+  transition: all 400ms ease;
+}
+
+.card:hover{
+  box-shadow: 7px 7px 23px rgba(0, 0, 0, 0.8);
+  transform: translateY(-3%);
+}
+
+.card img{
+  width: 100%;
+  height: 210px;
+}
+
+.card .contenido{
+  padding: 15px;
+  text-align: center;
+}
+
+.card .contenido p{
+  line-height: 1.5;
+  color: #6a6a6a;
+}
+
+.card .contenido h3{
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.card .contenido a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  color: #2fb4cc;
+  border: 1px solid #2fb4cc;
+  border-radius: 4px;
+}
+
+/* Pedidos */
+
+.pedido_titulo{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size:  50px;
+}
+
+
+.pedido_titulo  h2{
+  font-size:  50px;
+  margin-top:   50px;
+}
+
+.form{
+  width: 80%;
+  min-width: 400px;
+  margin: auto;
+  padding: auto;
+  position: relative;
+  inset: 2px;
+  border-radius: 8px;
+  padding: 20px 20px;
+  display: flex;
+  flex-flow: wrap;
+  box-sizing: inherit;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 20px;
+}
+
+.formu1{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 50%;
+  text-align: center;
+}
+
+.formu1 p{
+  font-size: 1rem;
+  text-align: center;
+  color: skyblue;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.subtitulo{
+  font-size: 1.3rem;
+  color: skyblue;
+  margin-bottom: 3vh;
+}
+
+
+.inputbox{
+  position: relative;
+}
+
+.inputbox input{
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  padding: .6em .3em;
+  outline: none;
+  border-bottom: 1px solid skyblue;
+  margin-bottom: 1em;
+  font-family: 'Nunito', sans-serif;
+}
+
+.inputbox label{
+  color: #252525;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(-12px) scale(0.7);
+  transform-origin: left top;
+}
+
+.botones{
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.botones button{
+  background-color: rgb(234, 255, 255);
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: .8em 0.5em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.botones button:hover{
+  padding: 5px 10px;
+  background: skyblue;
+  color: white;
+  border-radius: 15px;
+}
+
+.formu1 .saboresform input,
+.formu1 .adornosform input{
+  display: none;
+}
+
+.formu1 .saboresform label,
+.formu1 .adornosform label{
+  font-size: 0.75;
+  padding: 5px 15px 5px 35px;
+  display: inline-block;
+  position: relative;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.formu1 .saboresform label:hover,
+.formu1 .adornosform label:hover{
+  background-color: rgba(0,181,226,0.1);
+}
+
+.formu1 .saboresform label::before,
+.formu1 .adornosform label::before{
+  content: " ";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: none;
+  border: 3px solid skyblue;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  border-radius: 5px;
+}
+
+.formu1 .saboresform input:checked + label,
+.formu1 .adornosform input:checked + label{
+  padding: 5px 15px;
+  background: skyblue;
+  border-radius: 2px;
+  color: white;
+}
+
+.formu1 .saboresform input:checked + label::before,
+.formu1 .adornosform input:checked + label::before{
+  display: none;
+}
+
+/* Ubicacion */
+
+#Ubicacion{
+  background-image: url(./Imagenes/Pasteleria.png);
+  background-position: center;
+  background-size: 100%;
+  margin-top: 17vh;
+  margin-bottom: 5vh;
+  width: 100%;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  position: relative;
+}
+
+#Ubicacion::before{
+  position: absolute;
+  content: "";
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.tarjeta{
+margin-left: -2rem;
+}
+
+
+#Ubicacion .tarjeta h2{
+  position: relative; 
+  color: skyblue;
+  margin-top: 5em;
+}
+
+#Ubicacion .tarjeta p{
+  position: relative;
+  background-color: rgba(61, 152, 168, 0.5);
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.5);
+  color: white;
+  font-weight: 700;
+  margin-top: 4em;
+}
+
+#Ubicacion .Horarios table{
+  position: relative; 
+  color: white;
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin-top: 7rem;
+  margin-left: 6rem;
+  background-color: rgba(61, 152, 168, 0.3);
+  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.3);
+ 
+}
+
+#Ubicacion .Horarios thead{
+ background-color: rgba(135, 206, 235, 0.3);
+}
+
+#Ubicacion .Horarios th{
+  padding: 10px 20px;
+  font-weight: 600;
+  transform: uppercase;
+}
+
+#Ubicacion .Horarios td{
+  padding: 10px 20px;
+  border-bottom: 1px solid white;
+  font-weight: 300;
+  transform: uppercase;
+}
+
+.boton_ubicacion a{
+  position: relative;
+  margin-left: 77%;
+  background-color: rgba(135, 206, 235, 0.3);
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: .8em 0.5em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+.boton_ubicacion a:hover{
+  padding: 15px 10px;
+  background: skyblue;
+  color: white;
+  border-radius: 15px;
+  font-weight: 700;
+}
+
+/* Footer */
+
+footer{
+  width: 100;
+  margin-top: 5px;
+  background-color: white;
+  background-size: cover;
+}
+
+.container_footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.box_footer{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.box_footer .logo img{
+  width: 200px;
+}
+
+.box_footer h3{
+  color: skyblue;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.box_footer p{
+  max-width: 350px;
+  font-weight: 500;
+  color: #7a7a7a;
+  font-size: 18px;
+}
+
+.box_footer a{
+  margin-top: 10px;
+  color: #7a7a7a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.box_footer a:hover{
+  opacity: 0.8;
+}
+
+.box_footer a .fab{
+  font-size: 20px;
+}
+
+.box_copy{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: skyblue;
+}
+
+.box_copy p{
+  padding: 15px;
+  color:white;
+}
+
+/* Pedidos admin*/
+
+#pedidos{
+  text-align: center;
+  margin-top: 50px;
+}
+
+#pedidos h2{
+  font-size: 50px;
+}
+
+#pedidos .tabla_pedidos table{
+  position: relative; 
+  color: white;
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin-top: 50px;
+  margin-left: 6rem;
+  background-color: rgb(75, 144, 158);
+  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.3);
+ 
+}
+
+#pedidos .tabla_pedidos thead{
+ background-color: rgba(135, 206, 235, 1);
+}
+
+#pedidos .tabla_pedidos th{
+  padding: 10px 20px;
+  font-weight: 600;
+  transform: uppercase;
+}
+
+#pedidos .tabla_pedidos td{
+  padding: 10px 20px;
+  border-bottom: 1px solid white;
+  font-weight: 300;
+  transform: uppercase;
+}
