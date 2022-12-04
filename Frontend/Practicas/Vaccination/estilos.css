@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+*{ 
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  }
+
+body{
+  background-color: white;
+}
+
+  html{
+  scroll-behavior: smooth;
+}
+
+/* BG1 */
+.bg1{
+  background-image: url("./Imagenes/bg1.webp");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 1080px;
+}
+
+
+/* Navbar */
+.Navbar{
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  width: 100%;
+  padding: 5px 10%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, .5);
+}
+
+.Navbar h1{
+  color:#0080ff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transform: scale(1.5);
+}
+
+.Navbar h1:hover{
+ transform: scale(1.7) translateX(10px);
+}
+
+.Navbar nav a{
+  text-decoration: none;
+  color: #7a7a7a;
+  padding: 20px;
+  transition: all 0.5s ease;
+}
+
+.Navbar nav a:hover,
+.Navbar nav a:active{
+  color: white;
+  background-color: #004c99;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+.Navbar nav input{
+  color: white;
+  background-color: #004c99;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, .5);
+  transition: 0.5s all ease;
+  cursor: pointer;
+}
+
+.Navbar nav input:hover{
+  transform: scale(1.1);
+}
+
+/* Header 1 */
+#Header1{
+  margin-top: 5vh;
+  width: 50%;
+  height: 80%;
+  padding: 0 15vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#Header1 .contenedor_principal h1{
+  margin-bottom: 5vh;
+  font-size: 2.8rem;
+  color:#004c99;
+}
+
+#Header1 .contenedor_principal p{
+  color: #7a7a7a;
+}
+
+#Header1 .contenedor1{
+  margin-top: 35px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; 
+}
+
+#Header1 .contenedor1 .card1,
+#Header1 .contenedor1 .card2{
+  display: flex;
+  flex-direction: row;
+}
+
+#Header1 .contenedor1 .card2 p,
+#Header1 .contenedor1 .card1 p{
+  color: #004c99;
+  font-weight: 550;
+}
+
+#Header1 .contenedor1 .card2{
+  margin-left: 15vh;
+}
+
+#Header1 .contenedor1 figure{
+  display: flex;  
+  color: rgba(255, 226, 0, 1);
+  border-radius: 3px;
+  background-color: rgba(255, 226, 0, 0.15);
+  padding: 3px 3px;
+} 
+
+#Header1 .contenedor1 p,
+#Header1 .contenedor1 figure{
+  font-size: 15px;
+}
+
+#Header1 .contenedor1 p{
+  margin-left: 1vh;
+  margin-top: 1vh;
+}
+
+/* Form */
+#Form{
+  margin-top: 10vh;
+  width: 95%;
+  height: 90%;
+  padding: 0 8%;
+  display: flex;
+  flex-direction: column;
+}
+
+#Form .contenedor1{
+  display: flex;
+  flex-direction: row;
+  color: #004c99;
+  margin-bottom: 5vh;
+}
+
+#Form .contenedor1 figure{
+  border-radius: 5px;
+  background-color: rgba(0, 76, 153, 0.1);
+  padding: 4px 4px;
+}
+
+#Form .contenedor1 h2{
+  margin-top: 1vh;
+  margin-left: 1vh;
+}
+
+#Form .contenedor2{
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.3);
+  padding: 5vh 5vh;
+}
+
+#Form .contenedor2 form{
+  display: flex;
+  flex-direction: row;
+}
+
+#Form .contenedor2 form label{
+  display: flex;
+  flex-flow: row;
+  margin-bottom: 2vh;
+}
+
+#Form .contenedor2 form label figure{
+  color: rgb(0, 76, 153);
+  border-radius: 5px;
+  background-color: rgba(0, 76, 153, 0.1);
+  padding: 4px 4px;
+}
+
+#Form .contenedor2 form label h3{
+  color: #7a7a7a;
+  font-size: 15px;
+  font-weight: 550;
+  margin-top: 1vh;
+  margin-left: 4px;
+}
+
+#Form .contenedor2 form .calendario1,
+#Form .contenedor2 form .Tipo{
+  margin-left: 10vh;
+}
+
+#Form .contenedor2 form select,
+#Form .contenedor2 form input{
+  border: none;
+  background-color: rgba(0, 0, 0, 0.0);
+  font-weight: 600;
+  color: rgb(0, 24, 80);
+}
+
+#Form .contenedor2 form #Localiazcion{
+  margin-left: 3vh;
+}
+
+#Form .contenedor2 form #calendario1,
+#Form .contenedor2 form #Tipo{
+  margin-left: 14.5vh;
+}
+
+#Form .contenedor2 form .boton{
+  margin-left: 8vh;
+  font-weight: 400;
+  color: white;
+  background-color: #004c99;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 50px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, .5);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+#Form .contenedor2 form .boton:hover{
+  transform: scale(1.05);
+}
+
+/* Marcas */
+.baner{
+  margin-top: -55vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 100%;
+  padding: 15vh;
+}
+
+.baner img{
+  width: 40vh;
+  filter: opacity(0.1) drop-shadow(0 0 0 grey);
+}
+
+.baner figure .mod{
+  margin-top: 3.5vh;
+}
+
+.baner figure .pfi{
+  margin-top: -12vh;
+}
+
+.baner figure .sin{
+  margin-top: 5vh;
+}
+
+/* Header 2 */
+#Header2{
+  margin-top: -20vh;
+  width: 50%;
+  height: 80%;
+  padding: 0 15vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#Header2 .contenedor_principal h2{
+  margin-bottom: 50px;
+  font-size: 2.8rem;
+  color:#004c99;
+}
+
+#Header2 .contenedor_principal p{
+  color: #7a7a7a
+}
+
+#Header2 .contenedor1{
+  margin-top: 10vh;
+  display: flex;
+  padding: 0 auto;
+}
+
+#Header2 .contenedor1 .card{
+  width: 200px;
+  height: 250px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, .5);
+  background-color: white;
+  margin: 20px 5vh;
+  padding: 20px;
+  transition: all ease 0.5s;
+}
+
+#Header2 .contenedor1 .card:hover{
+  transform: translateY(-10px) scale(1.1);
+}
+
+#Header2 .contenedor1 .card figure{
+  color:#004c99;
+  width: 5vh;
+  height: 5vh;
+  padding: 4px 4px;
+  background-color: rgba(0, 76, 153, 0.1);
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#Header2 .contenedor1 .card h3{
+  font-weight: 600;
+  color: #004c99;
+  margin-bottom: 15px;
+}
+
+#Header2 .contenedor1 .card p{
+  font-size: 15px;
+  color: #7a7a7a;
+}
+
+/* Header 3 */
+.bg2{
+  background-image: url("./Imagenes/bg2.webp");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 1080px;
+}
+
+#Header3{
+  margin-top: 10vh;
+  width: 50%;
+  height: 100%;
+  padding: 0 15vh;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  display: block;
+}
+
+#Header3 .contenedor_principal h2{
+  margin-bottom: 50px;
+  font-size: 2.8rem;
+  color:#004c99;
+}
+
+#Header3 .contenedor_principal p{
+  color: #7a7a7a;
+  margin-bottom: 5vh;
+}
+
+#Header3 .contenedor1 .card{
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+#Header3 .contenedor1 .card:hover{
+  filter: brightness(0.3);
+}
+
+#Header3 .contenedor1 .card h3{
+  color: #004c99;
+  font-weight: 400;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+#Header3 .contenedor1 .card p{
+  font-size: 15px;
+  color: #7a7a7a;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .1);
+}
+
+#Header3 .contenedor1 .card figure{
+  color:#004c99;
+  width: 5vh;
+  height: 5vh;
+  padding: 4px 4px;
+  background-color: rgba(0, 76, 153, 0.1);
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Header 4 */
+.bg3{
+  background-image: url("./Imagenes/bg3.webp");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 1080px; 
+}
+
+#Header4{
+  margin-top: -40vh;
+  width: 50%;
+  height: 100%;
+  padding: 0 15vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#Header4 .contenedor_principal h2{
+  margin-bottom: 50px;
+  font-size: 2.8rem;
+  color:#004c99;
+}
+
+#Header4 .contenedor_principal p{
+  color: #7a7a7a;
+  margin-bottom: 5vh;
+}
+
+#Header4 .contenedor1{
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#Header4 .contenedor1 .card{
+  width: 25vh;
+  height: 28vh;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, .5);
+  background-color: white;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.5s ease all;
+}
+
+#Header4 .contenedor1 .card:hover{
+  transform: scale(1.1);
+}
+
+#Header4 .contenedor1 .card figure{
+  color:#004c99;
+  width: 5vh;
+  height: 5vh;
+  padding: 4px 4px;
+  background-color: rgba(0, 76, 153, 0.1);
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#Header4 .contenedor1 .card h3{
+  font-weight: 600;
+  color: #004c99;
+  margin-bottom: 5px;
+}
+
+#Header4 .contenedor1 .card p{
+  font-size: 15px;
+  color: #7a7a7a;
+  margin-bottom: 15px;
+}
+
+#Header4 .contenedor1 .card a{
+  font-size: 13px;
+  color: white;
+  background-color: #004c99;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, .5);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all ease 0.5s;
+}
+
+#Header4 .contenedor1 .card a:hover{
+  padding: 7px 7px;
+  filter: opacity(90%);
+}
+
+/* Footer */
+footer{
+  margin-top: -40vh;
+  width: 100%;
+  background-color: azure;
+  padding: 5vh 0;
+}
+
+footer .container_footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+
+footer .container_footer .box_footer{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+footer .container_footer .box_footer1{
+  width: 40%;
+  padding: 0 15vh;
+
+}
+
+footer .container_footer .box_footer1 h1{
+  color:#0080ff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transform: scale(1.5);
+  padding: 1rem 7.5vh;
+}
+
+footer .container_footer .box_footer1 h1:hover{
+  transform: scale(1.7) translateX(10px);
+}
+
+footer .container_footer .box_footer1 p{
+  font-size: 15px;
+  color: #7a7a7a;
+}
+
+footer .container_footer .box_footer{
+  padding: 1vh;
+  margin-right: 15vh;
+}
+
+footer .container_footer .box_footer h3{
+  color: rgb(0, 24, 80);
+  padding: 0 2vh;
+}
+
+footer .container_footer .box_footer a{
+  color: #7a7a7a;
+  font-size: 15px;
+  padding: 2vh;
+  text-decoration: none;
+  text-align: left;
+  transition: all 0.5s ease;
+}
+
+footer .container_footer .box_footer a:hover{
+  transform: scale(1.05);
+  filter: brightness(0.5);
+}
+
+footer .container_footer .box_copy{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 0 15vh;
+  margin-top: 15vh;
+}
+
+footer .container_footer .box_copy p{
+  font-size: 15px;
+  color: #7a7a7a;
+}
+
+footer .container_footer .box_terms{
+  margin-top: 15vh;
+}
+
+footer .container_footer .box_terms a{
+  font-size: 15px;
+  padding: 0 5vh;
+  margin-right: 15vh;
+  color: #7a7a7a;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+footer .container_footer .box_terms a:hover{
+  filter: brightness(0.5);  
+}
